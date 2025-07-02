@@ -1,0 +1,249 @@
+.readingTab {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 4px !important;
+  background-color: transparent !important;
+}
+
+.bandSidebar {
+  min-width: 220px;
+  width: 240px;
+  border-radius: 0 !important;
+  border: none !important;
+  border-right: 0.5px solid #ecebeb !important;
+  padding-block: 1rem;
+}
+
+.bandButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0 !important;
+  padding: 1rem 2rem;
+
+  &:hover {
+    border: 1px solid #31e3a5;
+  }
+
+  &:active {
+    background-color: #31e3a5;
+    color: #fff;
+  }
+}
+
+.readingContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description {
+  font-size: 14px;
+  color: #37474f;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.readingContentHeader {
+  h2 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.readingContentBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bandIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.testCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ecebeb;
+}
+
+.testCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.decoration {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #31e3a5;
+  position: relative;
+}
+
+.circleIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testCardQuestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #37474f;
+  }
+}
+
+.testCardTopic {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #37474f;
+    font-weight: 700;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.testCardTag {
+  width: max-content;
+  padding: 6px 12px;
+  border-radius: 50px;
+  background-color: #31e3a5;
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #37474f;
+  }
+}
+
+.examCard {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.08);
+  padding: 1.5rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #e0e7ef;
+  transition:
+    box-shadow 0.2s,
+    border 0.2s;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.16);
+    border: 1.5px solid #6c63ff;
+  }
+}
+
+.examCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  h4 {
+    font-size: 22px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #3ec6fd 0%, #6c63ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.examIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #3ec6fd 0%, #6c63ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img,
+  svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+}
+
+.examInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #37474f;
+  font-weight: 500;
+}
+
+.examTopic {
+  font-size: 16px;
+  font-weight: 700;
+  color: #37474f;
+
+  span {
+    font-weight: 500;
+    color: #37474f;
+  }
+}
+
+.examBadge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #3ec6fd 0%, #6c63ff 100%);
+  margin-bottom: 8px;
+}
+
+.examStartBtn {
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 8px;
+  cursor: pointer;
+
+  &:hover {
+    color: #6c63ff;
+  }
+}

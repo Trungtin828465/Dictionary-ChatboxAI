@@ -1,0 +1,14 @@
+.headerLink {
+  font-size: 0.875rem; // text-sm
+  font-weight: 500; // font-medium
+  color: #000; // text-black
+  transition: all;
+
+  &:hover {
+    color: var(--secondary-color); // hover:text-secondary
+  }
+
+  &.active {
+    font-weight: 700; // !font-bold
+  }
+}

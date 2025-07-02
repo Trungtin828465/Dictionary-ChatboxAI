@@ -1,0 +1,154 @@
+.container {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backButton {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #40e0ab;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.quizBox {
+  width: 100%;
+  background: #f5f6fa;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.quizContent {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #40e0ab;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border-color: #40e0ab;
+}
+
+.correct {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.incorrect {
+  color: #ef4444;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.checkButton,
+.nextButton,
+.finishButton {
+  background: #40e0ab;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.checkButton:hover,
+.nextButton:hover,
+.finishButton:hover {
+  background: #059669;
+}
+
+.progress {
+  margin-top: 1rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.type {
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.typeBadge {
+  display: inline-block;
+  margin-left: 0.7em;
+  padding: 0.1em 0.7em;
+  background: #e0f7ef;
+  color: #16a34a;
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 1em;
+  vertical-align: middle;
+  border: 1.5px solid #40e0ab;
+  font-style: normal;
+}
+
+.summaryList {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.summaryCorrect {
+  background: #e6fbe8;
+  border-left: 4px solid #16a34a;
+  padding: 1rem 1.2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.summaryIncorrect {
+  background: #fff1f2;
+  border-left: 4px solid #ef4444;
+  padding: 1rem 1.2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.summaryQuestion {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}

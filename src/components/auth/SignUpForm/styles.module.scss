@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; // space-y-6
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; // space-y-6
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; // space-y-2
+}
+
+.input {
+  border-radius: 9999px !important; // rounded-full
+  padding: 18px 1.5rem !important; // px-6 py-[18px]
+}
+
+.errorMessage {
+  font-size: 0.875rem; // text-sm
+  color: #ef4444; // text-red-500
+  padding: 0 1.5rem; // px-6
+}
+
+.submitButton {
+  border-radius: 9999px !important; // rounded-full
+  padding: 18px 0 !important; // py-[18px]
+  background-color: hsl(var(--secondary)) !important; // bg-secondary
+  font-weight: 700 !important; // font-bold
+  border: 1px solid transparent !important;
+  transition: all 0.2s !important;
+
+  &:hover {
+    background-color: white !important;
+    color: hsl(var(--secondary)) !important;
+    border-color: hsl(var(--secondary)) !important;
+  }
+}

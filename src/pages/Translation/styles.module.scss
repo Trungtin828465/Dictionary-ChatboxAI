@@ -1,0 +1,29 @@
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // gap-2
+  cursor: pointer;
+  color: black; // text-black
+  transition: all 0.2s; // transition-all
+
+  &:hover {
+    color: hsl(var(--secondary));
+  }
+
+  svg {
+    font-weight: 700; // font-bold
+    color: hsl(var(--secondary)); // text-secondary
+  }
+
+  span {
+    font-size: 0.875rem; // text-sm
+    font-weight: 700; // font-bold
+  }
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  text-align: center;
+}

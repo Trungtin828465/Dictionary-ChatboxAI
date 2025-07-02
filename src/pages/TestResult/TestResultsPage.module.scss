@@ -1,0 +1,129 @@
+/* TestResultsPage.module.scss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; // Occupy full viewport height
+  padding: 20px;
+  background-color: #f0f2f5; // Light background similar to the image
+  font-family: "Nunito", sans-serif; // Modern font
+  text-align: center;
+  color: #333;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50; // Darker blue-grey for title
+  margin-bottom: 25px;
+}
+
+.illustration {
+  margin-bottom: 35px;
+  .illustrationImage {
+    max-width: 280px; // Slightly larger illustration
+    height: auto;
+    display: block; // Ensures no extra space below image
+  }
+}
+
+.score {
+  margin-bottom: 35px;
+  .scoreValue {
+    font-size: 3.8em; // Even larger font for the score
+    font-weight: bold;
+    color: #ff69b4; // Pink color as in the image
+    letter-spacing: 1px; // A bit more spacing for score
+  }
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // Two columns
+  gap: 25px 50px; // Increased gap for better spacing
+  background-color: #fff; // White background for the details box
+  padding: 40px;
+  border-radius: 20px; // More rounded corners
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); // Stronger, softer shadow
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 650px; // Wider for better readability
+  text-align: left; // Align text within details items
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.15em; // Slightly larger font for details
+  color: #555;
+}
+
+.detailLabel {
+  font-weight: bold;
+  color: #333; // Darker label text
+  margin-bottom: 8px; // Space below label
+  white-space: nowrap; // Prevent label from wrapping
+}
+
+.detailValue {
+  color: #1a1a1a; // Very dark for values
+  font-weight: 600; // Slightly bolder values
+}
+
+.status {
+  font-weight: bold;
+  color: #e74c3c; // Red for "Chưa tốt" status
+  // Add more styles if needed, e.g., a background badge
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fce7e7; // Light red background for status
+}
+
+.actionButtons {
+  display: flex;
+  gap: 25px; // Increased space between buttons
+  width: 100%;
+  max-width: 450px; // Max width for buttons container
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column; // Stack buttons on smaller screens
+    gap: 15px;
+    max-width: 300px;
+  }
+}
+
+.exitButton,
+.viewDetailsButton {
+  padding: 16px 32px; // Larger padding for buttons
+  border: none;
+  border-radius: 12px; // More rounded buttons
+  cursor: pointer;
+  font-size: 1.15em; // Larger font in buttons
+  font-weight: 700; // Bolder text
+  transition: all 0.3s ease;
+  flex: 1; // Allow buttons to grow and take equal space
+}
+
+.exitButton {
+  background-color: #fff;
+  border: 2px solid #ddd; // More prominent border
+  color: #666;
+  &:hover {
+    background-color: #f5f5f5;
+    border-color: #bbb;
+    color: #444;
+  }
+}
+
+.viewDetailsButton {
+  background-color: #3cb371; // Teal color from image
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(60, 179, 113, 0.3); // Shadow for prominent button
+  &:hover {
+    background-color: #2e8b57; // Darker teal on hover
+    box-shadow: 0 6px 15px rgba(60, 179, 113, 0.4);
+  }
+}

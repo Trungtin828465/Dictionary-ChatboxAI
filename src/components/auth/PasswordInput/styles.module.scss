@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.input {
+  border-radius: 9999px !important; // rounded-full
+  padding: 18px 1.5rem !important; // py-[18px] px-6
+  padding-right: 3rem !important; // pr-12
+}
+
+.toggleButton {
+  position: absolute;
+  right: 1rem; // right-4
+  top: 50%;
+  transform: translateY(-50%); // -translate-y-1/2
+  color: #6b7280; // text-gray-500
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: #374151; // text-gray-700
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.icon {
+  height: 1.25rem; // h-5
+  width: 1.25rem; // w-5
+}

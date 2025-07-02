@@ -1,0 +1,72 @@
+.authContent {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // gap-2
+  cursor: pointer;
+  color: black; // text-black
+  transition: all 0.2s; // transition-all
+
+  &:hover {
+    color: var(--secondary-color); // hover:text-secondary
+  }
+
+  svg {
+    font-weight: 700; // font-bold
+    color: var(--secondary-color); // text-secondary
+  }
+
+  span {
+    font-size: 0.875rem; // text-sm
+    font-weight: 700; // font-bold
+  }
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // gap-2
+  justify-content: center;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; // mb-4
+  width: max(80%, 350px);
+  height: 50%;
+
+  svg {
+    width: 60%;
+    // height: 100%;
+  }
+}
+
+.messageContent {
+  text-align: center;
+}
+
+.messageTitle {
+  font-size: 1.5rem; // text-2xl
+  font-weight: 700; // font-bold
+  margin-bottom: 0.5rem; // mb-2
+}
+
+.messageDescription {
+  font-size: 0.875rem; // text-sm
+  color: var(--muted-foreground); // text-muted-foreground
+  text-align: center;
+  line-height: 1.5;
+}

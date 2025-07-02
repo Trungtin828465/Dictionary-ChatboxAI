@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; // space-y-3
+}
+
+.button {
+  border-radius: 9999px !important; // rounded-full
+  padding: 18px 1.5rem !important; // py-[18px] px-6
+  height: auto !important;
+
+  &:hover {
+    border-color: hsl(var(--secondary)) !important;
+  }
+}
+
+.buttonText {
+  position: relative !important;
+}
+
+.iconGroup {
+  transform: scale(1.5); // scale-150
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.75rem; // w-7
+  height: 1.75rem; // h-7
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+}

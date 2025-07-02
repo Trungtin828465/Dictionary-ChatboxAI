@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  margin: 0 auto; // mx-auto
+  padding: 1.5rem 00; // py-6 px-4
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem; // text-xl
+  font-weight: 700; // font-bold
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // gap-2
+}
+
+.description {
+  color: #4b5563; // text-gray-600
+}
+
+.link {
+  color: #000; // text-black
+  font-weight: 500; // font-medium
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--primary-color); // hover:text-primary
+  }
+}

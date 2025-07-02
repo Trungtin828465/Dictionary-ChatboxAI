@@ -1,0 +1,126 @@
+.Chatbox {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 16px;
+}
+.ChatboxHeader {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.ChatboxTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ChatboxFrame {
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+  height: 100%;
+  padding-top: 20px;
+}
+.ChatboxChat {
+  height: 100%;
+  overflow-y: auto;
+  padding-inline: 20px;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column-reverse;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 100rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--secondary));
+    border-radius: 100rem;
+  }
+  // scroll
+}
+.ChatboxSend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-end;
+  gap: 12px;
+  border: 1px solid #31e3a5;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+}
+
+.ChatboxBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  textarea {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    border-bottom: 1px solid #31e3a5;
+    border-radius: 0;
+  }
+  textarea:focus {
+    --tw-ring-color: none;
+    border-bottom: 1px solid #31e3a5 !important;
+
+    border: none;
+    outline: none;
+  }
+}
+.ChatboxSendIcon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ChatboxEmpty {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.ChatboxContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  overflow-y: auto;
+  padding: 0 16px;
+}
+.ChatboxAnswer,
+.ChatboxQuestion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 10px;
+}
+.ChatboxLeft {
+  height: 100%;
+}
+.ChatboxLeftContent {
+  height: 85%;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--secondary));
+    border-radius: 100rem;
+  }
+}

@@ -1,0 +1,124 @@
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.spinner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: hsl(var(--secondary));
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.dot1 {
+  animation-delay: -0.32s;
+}
+
+.dot2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/**
+  * ==============================================
+  * Dot Falling
+  * ==============================================
+  */
+.dotFalling {
+  position: relative;
+  left: -9999px;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary));
+  box-shadow: 9999px 0 0 0 hsl(var(--secondary));
+  animation: dot-falling 1s infinite linear;
+  animation-delay: 0.1s;
+}
+.dotFalling::before,
+.dotFalling::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dotFalling::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary));
+  animation: dot-falling-before 1s infinite linear;
+  animation-delay: 0s;
+}
+.dotFalling::after {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary));
+  animation: dot-falling-after 1s infinite linear;
+  animation-delay: 0.2s;
+}
+
+@keyframes dot-falling {
+  0% {
+    box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9999px 0 0 0 hsl(var(--secondary));
+  }
+  100% {
+    box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+@keyframes dot-falling-before {
+  0% {
+    box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9984px 0 0 0 hsl(var(--secondary));
+  }
+  100% {
+    box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+@keyframes dot-falling-after {
+  0% {
+    box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 10014px 0 0 0 hsl(var(--secondary));
+  }
+  100% {
+    box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
