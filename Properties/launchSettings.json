@@ -1,0 +1,27 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5299",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GOOGLE_CLOUD_PROJECT_ID": "dotnet-api-4424a",
+        "GOOGLE_APPLICATION_CREDENTIALS": "gg_credential.json"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:7063;http://localhost:5299",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GOOGLE_CLOUD_PROJECT_ID": "dotnet-api-4424a",
+        "GOOGLE_APPLICATION_CREDENTIALS": "gg_credential.json"
+      }
+    }
+  }
+}
